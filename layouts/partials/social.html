@@ -1,0 +1,60 @@
+{{ with .Site.Params.GnuPGFingerprint }}
+<li><a href="https://pgp.key-server.io/pks/lookup?op=vindex&search=0x{{.}}" title="GPG"><i class="fa fa-unlock-alt" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.StackExchangeID }}
+<li><a href="https://stackexchange.com/users/{{.}}" title="StackExchange"><i class="fa fa-stack-exchange" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.StackOverflowID }}
+<li><a href="https://stackoverflow.com/users/{{.}}" title="StackExchange"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.SlackURL }}
+<li><a href="{{.}}" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.TwitterID }}
+<li><a href="https://twitter.com/{{.}}" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.GoogleplusID }}
+<li><a href="https://plus.google.com/{{.}}/about" title="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.FacebookID }}
+<li><a href="https://facebook.com/{{.}}" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.BitbucketID }}
+<li><a href="https://bitbucket.org/{{.}}" title="Bitbucket"><i class="fa fa-bitbucket" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.GithubID }}
+<li><a href="https://github.com/{{.}}" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.GitlabId }}
+<li><a href="https://gitlab.com/{{.}}" title="GitLab"><i class="fa fa-gitlab" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.CodepenID }}
+<li><a href="https://codepen.io/{{.}}" title="Codepen"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.LinkedInID }}
+<li><a href="https://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.InstagramID }}
+<li><a href="https://instagram.com/{{.}}" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.TelegramID }}
+<li><a href="https://t.me/{{.}}" title="Telegram"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.Email }}
+<li><a href="mailto:{{.}}" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.Phone }}
+<li><a href="tel:{{.}}" title="Phone"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.Mobile }}
+<li><a href="tel:{{.}}" title="Mobile"><i class="fa fa-mobile" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.PayPalMeID }}
+<li><a href="https://www.paypal.me/{{.}}" title="PayPal.Me"><i class="fa fa-paypal" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.XingURL }}
+<li><a href="{{.}}" title="XING"><i class="fa fa-xing" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.CvURL }}
+<li><a href="{{.}}" title="Curriculum Vitae"><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
+{{ end }}

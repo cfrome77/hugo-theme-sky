@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+
+        {{ partial "head.html" . }}
+    </head>
+
+    <body>
+        {{ partial "header.html" . }}
+     <!-- Page Content -->
+    <div class="container col-md-12 col-md-offset-2" id="blog-post">
+
+      <div class="row centered-form center-block" >
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <div class="post-title">
+          <h1 class="mt-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		  </div>
+		  
+          <hr>
+
+          <!-- Date/Time -->
+          <div class="post-date">
+          <h2>{{ .Date.Format "Jan 2, 2006 " }} - {{ .ReadingTime }} MINUTE READ</h2>
+		  </div>
+		  
+          <hr>
+
+          <!-- Post Content -->
+          <div class="post-text">
+          {{ .Content | markdownify }}
+          </div>
+          <hr />
+          <div class="comments">
+          {{ template "_internal/disqus.html" . }}
+          </div>
+    </div>
+    </div>
+        {{ partial "footer.html" . }}
+    </body>
+</html>

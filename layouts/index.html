@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+		<title> {{ .Site.Title }} </title>
+
+		{{ partial "head.html" . }}
+
+</head>
+    {{ partial "header.html" . }}
+<body>
+<div class="container-fluid" id="home-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body text-center">
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        <center>
+                                                <img class="media-object dp img-circle" src="{{ .Site.Params.ProfilePicture }}" style="width: 180px;height:180px;">
+                                        </center>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h2>Hugo</h2>
+                                        <p>Software Developer</p>
+                                        <p>
+                                            <i class="fa fa-globe"> Washignton D.C.</i>
+                                        </p>
+                                        <p class="description">
+                                        Hi I'm Hugo and this is my website. I am a developer, writer and family man. I like developing websites using Hugo, sports, nature, photography and travel. On this websites you can expect my projects and blog posts about everything I love. Enjoy!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="IdFooter" class="panel-footer text-center">
+                            <ul class="social-network social-circle">
+				                   {{ partial "social.html" . }}
+				            </ul>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-4"></div>
+                </div>
+        </div>
+    </div>
+    <div class="footer">
+    {{ partial "footer.html" . }}
+    </div>
+</body>
+</html>

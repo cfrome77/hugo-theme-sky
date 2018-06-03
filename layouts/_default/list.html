@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+	<head>
+		<title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+
+		{{ partial "head.html" . }}
+	</head>
+
+	<body>
+		{{ partial "header.html" . }}
+<div class="container" id="blog-container">
+<div class="page-heading">
+  <h2 class="page-title">Blog <a class="rss-subscribe" href="{{ "/index.xml" | absURL }}"><i class="fa fa-rss" aria-hidden="true"></i></a></h2>
+</div>
+{{ range .Data.Pages }}
+<div class="col-md-12" id="post-header">
+    <h1><a href={{ .Permalink }}>{{ .Title }}</a><span class="badge pull-right">{{ .Date.Format "Jan 2, 2006" }}</span></h1>
+<div>
+    <div class="post-description">
+    {{ .Description }}
+    </div>
+    <span class="button "><a href="{{ .Permalink }}">Read more</a></span>
+     </div>
+    <hr>
+</div>
+{{end}}
+</div>
+{{ partial "footer.html" . }}
+	</body>
+</html>
