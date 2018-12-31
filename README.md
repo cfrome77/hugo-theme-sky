@@ -1,4 +1,4 @@
-# Sky
+# Sky Theme for Hugo
 
 Sky is a simple, minimal theme for Hugo
 
