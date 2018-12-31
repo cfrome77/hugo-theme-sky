@@ -98,4 +98,4 @@ You can turn off disqus comments per page by adding `nocomments = true` to the f
 
 ## License
 
-Sky is licensed under the [MIT License](LICENSE.md)
+Sky is licensed under the [MIT License](LICENSE)
