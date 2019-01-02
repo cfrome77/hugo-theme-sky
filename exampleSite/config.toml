@@ -8,7 +8,7 @@ disqusShortname = "your_disqus_shortname"
   [[menu.header]]
     name = "blog"
     weight = 0
-    url = "/post"
+    url = "/blog"
   [[menu.header]]
     name = "about"
     weight = 0
