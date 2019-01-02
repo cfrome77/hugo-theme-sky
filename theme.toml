@@ -4,7 +4,7 @@
 name = "sky"
 license = "MIT"
 licenselink = "https://github.com/cfrome77/hugo-theme-sky/blob/master/LICENSE.md"
-description = ""
+description = "Sky is a simple theme for Hugo that make use of Bootstrap, jQuery, and Font Awesome"
 homepage = "https://github.com/cfrome77/hugo-them-sky/"
 tags = ["simple", "minimal", "blog"]
 features = ["blog"]
