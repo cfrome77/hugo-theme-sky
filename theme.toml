@@ -8,7 +8,7 @@ description = "Sky is a simple theme for Hugo that make use of Bootstrap, jQuery
 homepage = "https://github.com/cfrome77/hugo-theme-sky/"
 tags = ["simple", "minimal", "blog", "disqus"]
 features = ["blog"]
-min_version = "0.37.1"
+min_version = "0.92.0"
 
 [author]
   name = "Chris Frome"

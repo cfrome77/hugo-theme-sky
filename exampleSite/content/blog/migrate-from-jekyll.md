@@ -1,19 +1,13 @@
-+++
-title = "Migrate to Hugo from Jekyll"
-description = ""
-tags = [
-    "go",
-    "golang",
-    "templates",
-    "themes",
-    "development",
-]
-date = "2014-04-02"
-categories = [
-    "Development",
-    "golang",
-]
-+++
+---
+categories:
+  - "Development"
+  - "golang"
+date: 2014-04-02
+description: ''
+tags: ['go', 'golang', 'templates', 'themes', 'development']
+title: '(Hu)go Template Primer'
+author: 'Hugo'
+---
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
 its template engine. It is an extremely lightweight engine that provides a very
